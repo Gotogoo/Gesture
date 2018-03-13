@@ -1,27 +1,27 @@
 pipeline {
-    agent none
+    agent any
     stages {
         stage('build') {
             steps {
-                sh 'swift --version'
+                sh 'echo build'
             }
         }
 
         stage('deploy-qa') {
             steps {
-                sh 'swift --version'
+                sh 'echo deploy-qa'
             }
         }
 
         stage('deploy-st') {
+                sh 'echo deploy-st'
             steps {
-                sh 'swift --version'
             }
         }
 
         stage('deploy-uat') {
             steps {
-                sh 'swift --version'
+                sh 'echo deploy-uat'
             }
         }
     }
