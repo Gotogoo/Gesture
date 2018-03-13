@@ -1,0 +1,28 @@
+pipeline {
+    agent none
+    stages {
+        stage('build') {
+            steps {
+                sh 'swift --version'
+            }
+        }
+
+        stage('deploy-qa') {
+            steps {
+                sh 'swift --version'
+            }
+        }
+
+        stage('deploy-st') {
+            steps {
+                sh 'swift --version'
+            }
+        }
+
+        stage('deploy-uat') {
+            steps {
+                sh 'swift --version'
+            }
+        }
+    }
+}
